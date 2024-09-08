@@ -23,13 +23,13 @@ const dolScore2 =108;
 const dolScore3 = 89;
 
 const KoaScore1 = 88;
-const KooaScore2 = 91;
+const KoaScore2 = 91;
 const KoaScore3 = 110;
 
 //tinh diem trung binh và in ra
 const diemTB_Dol =(dolScore1 + dolScore2 + dolScore3)/3;
 console.log("DiemTB đội Dolphins :",diemTB_Dol);
-const diemTB_Koa = (KoaScore1 + KooaScore2 + KoaScore3)/3;
+const diemTB_Koa = (KoaScore1 + KoaScore2 + KoaScore3)/3;
 console.log("DiemTB đội Koalas :",diemTB_Koa);
 
 // so sanh diem 
@@ -42,15 +42,34 @@ if(diemTB_Dol > diemTB_Koa){
 }
 //Bonus 1 : Yêu cầu tối thiểu 100đ điểm chiến thắng
 const minScore = 100;
-if(diemTB_Dol > diemTB_Koa && diemTB_Dol >= minScore ){
+//data Bonus1
+const dolBonusScore1 = 97;
+const dolBonusScore2 =112;
+const dolBonusScore3 = 101;
+
+const KoaBonusScore1 = 109;
+const KoaBonusScore2 = 95;
+const KoaBonusScore3 = 123;
+
+//tinh diem trung binh và in ra
+const diemTB_Dol_Bonus1 =(dolBonusScore1 + dolBonusScore2 + dolBonusScore3)/3;
+console.log("DiemTB đội Dolphins :",diemTB_Dol_Bonus1);
+const diemTB_Koa_Bonus1 = (KoaBonusScore1 + KoaBonusScore2 + KoaBonusScore3)/3;
+console.log("DiemTB đội Koalas :",diemTB_Koa_Bonus1);
+
+//dieu kien
+if(diemTB_Dol_Bonus1 > diemTB_Koa_Bonus1 && diemTB_Dol_Bonus1 >= minScore ){
     console.log("Dolphins'Team win");
-}else if (diemTB_Dol < diemTB_Koa && diemTB_Koa >= minScore){
+}else if (diemTB_Dol_Bonus1 < diemTB_Koa_Bonus1 && diemTB_Koa_Bonus1 >= minScore){
     console.log("Koalas' Team win");
-}else if (diemTB_Dol === diemTB_Koa && diemTB_Dol >= minScore && diemTB_Koa >= minScore){
+}else if (diemTB_Dol === diemTB_Koa_Bonus1 && diemTB_Dol_Bonus1 >= minScore && diemTB_Koa_Bonus1 >= minScore){
     console.log("Two Team Tie");
 }else{
     console.log("No Team Won");
 }
+
+
+
 
 
 
