@@ -32,6 +32,15 @@ console.log("DiemTB đội Dolphins :",diemTB_Dol);
 const diemTB_Koa = (KoaScore1 + KooaScore2 + KoaScore3)/3;
 console.log("DiemTB đội Koalas :",diemTB_Koa);
 
+// so sanh diem 
+if(diemTB_Dol > diemTB_Koa){
+    console.log("Dolphins's Team win");
+}else if (diemTB_Dol < diemTB_Koa){
+    console.log("Koalas'Team win");
+}else {
+    console.log("Tier");
+}
+
 
 
 
