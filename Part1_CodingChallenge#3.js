@@ -67,9 +67,31 @@ if(diemTB_Dol_Bonus1 > diemTB_Koa_Bonus1 && diemTB_Dol_Bonus1 >= minScore ){
 }else{
     console.log("No Team Won");
 }
+//data Bonus 2 
+const dolBonus2Score1 = 97;
+const dolBonus2Score2 =112;
+const dolBonus2Score3 = 101;
 
+const KoaBonus2Score1 = 109;
+const KoaBonus2Score2 = 95;
+const KoaBonus2Score3 = 106;
 
+//tinh diem trung binh và in ra
+const diemTB_Dol_Bonus2 =(dolBonus2Score1 + dolBonus2Score2 + dolBonus2Score3)/3;
+console.log("DiemTB đội Dolphins :",diemTB_Dol_Bonus2);
+const diemTB_Koa_Bonus2 = (KoaBonus2Score1 + KoaBonus2Score2 + KoaBonus2Score3)/3;
+console.log("DiemTB đội Koalas :",diemTB_Koa_Bonus2);
 
+//dieu kien
+if(diemTB_Dol_Bonus2 > diemTB_Koa_Bonus2 && diemTB_Dol_Bonus2 >= minScore ){
+    console.log("Dolphins'Team win");
+}else if (diemTB_Dol_Bonus2 < diemTB_Koa_Bonus2 && diemTB_Koa_Bonus2 >= minScore){
+    console.log("Koalas' Team win");
+}else if (diemTB_Dol_Bonus2 === diemTB_Koa_Bonus2 && diemTB_Dol_Bonus2 >= minScore && diemTB_Koa_Bonus2 >= minScore){
+    console.log("Two Team Tie");
+}else{
+    console.log("No Team Won");
+}
 
 
 
