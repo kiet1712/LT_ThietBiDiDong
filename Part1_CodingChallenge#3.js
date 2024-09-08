@@ -38,9 +38,20 @@ if(diemTB_Dol > diemTB_Koa){
 }else if (diemTB_Dol < diemTB_Koa){
     console.log("Koalas'Team win");
 }else {
-    console.log("Tier");
+    console.log("Tie");
 }
-//
+//Bonus 1 : Yêu cầu tối thiểu 100đ điểm chiến thắng
+const minScore = 100;
+if(diemTB_Dol > diemTB_Koa && diemTB_Dol >= minScore ){
+    console.log("Dolphins'Team win");
+}else if (diemTB_Dol < diemTB_Koa && diemTB_Koa >= minScore){
+    console.log("Koalas' Team win");
+}else if (diemTB_Dol === diemTB_Koa && diemTB_Dol >= minScore && diemTB_Koa >= minScore){
+    console.log("Two Team Tie");
+}else{
+    console.log("No Team Won");
+}
+
 
 
 
