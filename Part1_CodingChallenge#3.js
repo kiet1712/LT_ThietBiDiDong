@@ -40,7 +40,7 @@ if(diemTB_Dol > diemTB_Koa){
 }else {
     console.log("Tier");
 }
-
+//
 
 
 
