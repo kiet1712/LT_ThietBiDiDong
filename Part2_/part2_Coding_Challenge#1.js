@@ -16,7 +16,19 @@ const avgKoa = calcAverage(65, 54, 49);
 console.log(avgDol);
 console.log(avgKoa);
 
+
+
 // 3. Create a function 'checkWinner' that takes the average score of each team
+const checkWinner = (avgDol, avgKoa) => {
+    if (avgDol >= 2 * avgKoa) {
+      console.log(`Dolphins win (${avgDol} vs. ${avgKoa})`);  
+    } else if (avgKoa >= 2 * avgDol) {
+      console.log(`Koalas win (${avgKoa} vs. ${avgDol})`);
+    } else {
+      console.log("No team wins!");
+    }
+  };
+  checkWinner(avgDol, avgKoa);
 // as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
 // to the console, together with the victory points, according to the rule above.
 // Example: "Koalas win (30 vs. 13)"
