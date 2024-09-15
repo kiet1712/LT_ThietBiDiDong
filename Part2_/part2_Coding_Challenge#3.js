@@ -14,11 +14,22 @@ const mark = {
     fullName: 'John Smith',
     mass: 92,
     height: 1.95,
+  
 };
 // 2. Create a 'calcBMI' method on each object to calculate the BMI (the same
 // method on both objects). Store the BMI value to a property, and also return it
 // from the method
+const calcBMI = (person) => {
+    person.bmi = person.mass / (person.height ** 2);
+    return person.bmi;
+};
+
 // 3. Log to the console who has the higher BMI, together with the full name and the
 // respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+calcBMI(mark);
+calcBMI(john);
+
+console.log(calcBMI(mark));
+console.log(calcBMI(john));
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 // tall.
