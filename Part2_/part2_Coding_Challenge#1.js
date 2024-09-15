@@ -9,6 +9,13 @@
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
 // 2. Use the function to calculate the average for both teams
+
+const avgDol = calcAverage(44, 23, 71); 
+const avgKoa = calcAverage(65, 54, 49);   
+
+console.log(avgDol);
+console.log(avgKoa);
+
 // 3. Create a function 'checkWinner' that takes the average score of each team
 // as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
 // to the console, together with the victory points, according to the rule above.
