@@ -8,7 +8,9 @@
 // start with an if/else statement, and then try to convert it to a ternary
 // operator!)
 
-const bill = 275;
+//const bill = 275;
+// const bill = 40;
+const bill = 430;
 const tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20;// điều kiện nếu bill trong khoảng 50-300 thì tip = 15%., không thì 20%
 
 
