@@ -23,13 +23,17 @@ const calcBMI = (person) => {
     person.bmi = person.mass / (person.height ** 2);
     return person.bmi;
 };
-
-// 3. Log to the console who has the higher BMI, together with the full name and the
-// respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 calcBMI(mark);
 calcBMI(john);
 
 console.log(calcBMI(mark));
 console.log(calcBMI(john));
+// 3. Log to the console who has the higher BMI, together with the full name and the
+// respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+if (mark.bmi > john.bmi) {
+    console.log(`Mark's BMI (${mark.bmi}) is higher than John's (${john.bmi})!`);
+  } else {
+    console.log(`John's BMI (${john.bmi}) is higher than Mark's (${mark.bmi})!`);
+  } 
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 // tall.
