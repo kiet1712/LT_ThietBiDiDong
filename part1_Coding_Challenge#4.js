@@ -15,3 +15,4 @@ const tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.20;// điều k
 // 2. Print a string to the console containing the bill value, the tip, and the final value
 // (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value
 // 316.25”
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`);
