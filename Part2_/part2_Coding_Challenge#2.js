@@ -16,6 +16,8 @@ console.log(calcTip);
 
 // 2. And now let's use arrays! So create an array 'bills' containing the test data
 // below
+const bills = [125, 555, 44];
+
 // 3. Create an array 'tips' containing the tip value for each bill, calculated from
 // the function you created before
 // 4. Bonus: Create an array 'total' containing the total values, so the bill + tip
